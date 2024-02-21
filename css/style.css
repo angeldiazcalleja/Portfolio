@@ -1,0 +1,1429 @@
+/*------------------------------------------------------------------------
+RESET 
+------------------------------------------------------------------------*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+#cookies {
+    position: fixed;
+    height: auto;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8em;
+    z-index: 100;
+    padding: 1em;
+    opacity: 0.9;
+}
+
+#cookies p {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#ok-button {
+    display: block;
+    padding: 0.2em 2em;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+/*-------------------- COLORS --------------------------------*/
+
+.black-panter {
+    color: #000;
+}
+
+.snow-white {
+    color: #fff;
+}
+
+.white-coco {
+    color: #F0EDE5;
+}
+
+.orangina {
+    color: #ffde59;
+}
+
+.warm-sand {
+    color: #C0AB8E;
+}
+
+
+.dark-blue {
+    color: #2E4A62;
+}
+
+.pale-blue {
+    color: #66BAC6;
+}
+
+.grey-blue {
+    color: #556D8E;
+}
+
+.pale-grey {
+    color: #B4B7BA;
+}
+
+/*-------------------- BACKGROUND COLORS --------------------------------*/
+
+.black-panter-back {
+    background-color: #000;
+}
+
+.snow-white-back {
+    background-color: #fff;
+}
+
+.white-coco-back {
+    background-color: #F0EDE5;
+}
+
+.orangina-back {
+    background-color: #ffde59;
+}
+
+
+.warm-sand-back {
+    background-color: #C0AB8E;
+}
+
+.dark-blue-back {
+    background-color: #2E4A62;
+}
+
+.pale-blue-back {
+    background-color: #8CCBD5;
+}
+
+.grey-blue-back {
+    background-color: #556D8E;
+}
+
+.pale-grey-back {
+    background-color: #B4B7BA;
+}
+
+
+/*---------------------------------------------------------------------------
+                   
+Mobile First - Screen MAX 768 px    
+
+----------------------------------------------------------------------------*/
+
+@media screen and (max-width: 768px) {
+
+    /*-------------------------------------------
+    RESET
+    -------------------------------------------*/
+
+    .space-between {
+        width: 100%;
+        height: 15vh;
+        background-color: transparent;
+    }
+
+    .mobile-down {
+        bottom: 0;
+    }
+
+    /*-------------------------------------------
+    LANDING
+    -------------------------------------------*/
+
+    #landing {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-image: url(../img/background-landing-mobile.jpg);
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    /*---------------------------------------------------------------------------
+                   
+NAVIGATION BAR    
+    
+----------------------------------------------------------------------------*/
+
+    #desktop-navbar {
+        display: none;
+    }
+
+    #mobile-navbar {
+        width: 100%;
+        height: 15vh;
+        position: fixed;
+        z-index: 99;
+        box-shadow: 0px 5px 5px -5px grey;
+    }
+
+    #menu-icon {
+        height: 15vh;
+        width: 10vw;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    #menu-icon div {
+        width: 10vw;
+        height: 1vh;
+    }
+
+    #menu-icon div.bar {
+        margin-bottom: 2vh;
+    }
+
+    #mobile-navbar ul {
+        width: 100%;
+        height: 85vh;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    ul#menu-list {
+        display: none;
+    }
+
+    #menu-list li {
+        list-style-type: none;
+        width: 100%;
+        height: 17vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-left: 2px solid transparent;
+        border-right: 2px solid transparent;
+        font-family: 'Allerta Stencil', sans-serif;
+    }
+
+    #menu-list li a {
+        text-decoration: none;
+        color: #C0AB8E;
+        font-size: 1.5em;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .home-button {
+        color: #2E4A62 !important;
+    }
+
+    #menu-list li a:hover {
+        padding: 0 5vw;
+        border-left: 5px solid #F0EDE5;
+        border-right: 5px solid #F0EDE5;
+        color: #2E4A62;
+    }
+
+    .menu-division {
+        border-top: 1px solid red;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .title {
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .container {
+        width: 230px;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+        top: 16vh;
+    }
+
+    img.logo {
+        width: 100%;
+        height: auto;
+    }
+
+    .name {
+        text-align: center;
+        font-family: 'Allerta Stencil', sans-serif;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    /*---------------------------------------------------------------------------
+                    
+SECOND PAGE - ABOUT  
+    
+----------------------------------------------------------------------------*/
+
+    #about {
+        height: auto;
+        width: 100%;
+        padding-bottom: 4em;
+    }
+
+    .header {
+        font-size: 2em;
+        text-transform: uppercase;
+        font-family: 'Allerta Stencil', sans-serif;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 3vh;
+    }
+
+    .text {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 3vh;
+    }
+
+    #profile-photo {
+        width: 70%;
+        height: auto;
+        display: block;
+        box-shadow: 1px 1px 5px grey;
+        margin: 1.5em auto 0 auto;
+    }
+
+
+    .text-right{
+        max-width:85%;
+        text-align:center;
+        margin-left:1.5em;
+    }
+
+
+    .description {
+        list-style-type: none;
+        line-height: 1.5em;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        color: #000;
+        margin-top: 1em;
+        margin-bottom: 2.5em;
+    }
+
+    .text p {
+        width: 100%;
+        font-size: 1em;
+        text-align: left;
+        line-height: 1.5em;
+        font-family: 'Montserrat', sans-serif;
+        margin: 1em auto;
+    }
+
+    #rewriteStory-button {
+        width: 100%;
+        padding: 10px;
+        display: block;
+        margin: 1em auto;
+        font-family: 'Montserrat', sans-serif;
+        color: #fff;
+        background-color: #2E4A62;
+        border: 1px solid #fff;
+        box-shadow: 1px 1px 5px grey;
+        opacity: 0.8;
+    }
+    
+    #rewriteStory-button:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+
+    /*---------------------------------------------------------------------------
+                    
+THIRD PAGE - HIGHLIGHTS  
+    
+----------------------------------------------------------------------------*/
+
+
+    #highlights {
+        width: 100%;
+        height: auto;
+        padding-bottom: 4em;
+    }
+
+    article.wrapper {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .wrapper {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .wrapper p {
+        font-size: 1em;
+        text-align: left;
+        line-height: 1.3em;
+        font-family: 'Montserrat', sans-serif;
+        margin: 1em auto 0 auto;
+    }
+
+    .skills li {
+        width: 100%;
+        text-align: center;
+        margin: 5vh 0vw;
+        list-style-type: none;
+        font-family: 'Allerta Stencil', sans-serif;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    .skills li img {
+        margin: 0 auto;
+        display: block;
+        width: 8em;
+    }
+
+    .icon-construction:hover {
+        content: url(../img/icon-learning.png);
+        margin: 0 auto;
+        display: block;
+        width: 8em;
+    }
+
+
+
+    /*---------------------------------------------------------------------------
+                    
+FOURTH PAGE - PROJECTS
+    
+----------------------------------------------------------------------------*/
+
+   .project-card{
+    width:20em !important;
+   }
+
+    #testimonials {
+        height: auto;
+        width: 100%;
+        padding-bottom: 4em;
+    }
+
+    .opinions {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .opinions article {
+        width: 100%;
+        display: block;
+        padding: 2vh;
+    }
+
+    .speech-bubble {
+        position: relative;
+        border-radius: .4em;
+        padding: 2em;
+        margin-bottom: 2em;
+    }
+
+    .speech-bubble:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border: 25px solid transparent;
+        border-top-color: #2E4A62;
+        border-bottom: 0;
+        margin-left: -20px;
+        margin-bottom: -20px;
+    }
+
+    .speech-bubble p {
+        font-family: 'Montserrat', sans-serif;
+        color: #fff;
+    }
+
+
+    .pic-client {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 auto;
+        border: 2px solid #C0AB8E;
+    }
+
+    .pic-client img {
+        width: 300px;
+        height: auto;
+        display: block;
+        position: relative;
+        right: 50px;
+    }
+
+    h4 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2em;
+        text-align: center;
+        margin: 0.2em;
+        color: #2E4A62;
+    }
+
+    h5 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1em;
+        text-align: center;
+        font-weight: 400;
+    }
+
+
+
+    /*---------------------------------------------------------------------------
+                    
+FIFTH PAGE - CONTACT  
+    
+----------------------------------------------------------------------------*/
+
+    #contact {
+        height: auto;
+        width: 100%;
+        background-image: url(../img/white-door.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .form p {
+        margin: 2em 0;
+    }
+
+    input {
+        font-family: 'Montserrat', sans-serif;
+        box-shadow: 1px 1px 5px grey;
+        opacity: 0.8;
+        border: 1px solid #fff;
+        padding: 0.5em;
+        text-transform: uppercase;
+        width: 100%;
+    }
+
+    ::placeholder {
+        color: #000;
+        text-align: left top;
+    }
+
+    textarea {
+        font-family: 'Montserrat', sans-serif;
+        height: 10em;
+        width: 100%;
+        box-shadow: 1px 1px 5px grey;
+        opacity: 0.8;
+        border: 1px solid #fff;
+        padding: 0.5em;
+        text-transform: uppercase;
+    }
+
+    .submit {
+        font-family: 'Montserrat', sans-serif;
+        width: 50%;
+        display: block;
+        margin: 0 auto 2.5em auto;
+    }
+
+
+    /*---------------------------------------------------------------------------
+                    
+FOOTER  
+    
+----------------------------------------------------------------------------*/
+
+    footer {
+        width: 100%;
+        height: auto;
+        background-color: #000;
+        box-shadow: 1px 1px 10px grey;
+        padding: 1em 0;
+    }
+
+    .social-icons {
+        text-align: center;
+    }
+
+    .social-icons img {
+        width: 12vh;
+        height: auto;
+        padding: 1vh;
+        margin: 2vh;
+        display: inline-block;
+    }
+
+    footer .copyright {
+        text-align: center;
+        padding-bottom: 0.8em;
+        font-family: 'Montserrat', sans-serif;
+        color: #fff;
+        font-size: 1em;
+        font-weight: 400;
+    }
+
+    .icon {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    .icon:hover {
+        opacity: 1;
+    }
+
+    .impressum {
+        width: 100%;
+        height: auto;
+        margin: 1.2em 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h6 a {
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2em;
+        color: #F0EDE5;
+        font-weight: 400;
+        margin: 0px 10px;
+    }
+
+    h6 a:hover {
+        color: #fff;
+    }
+
+    .impressum span {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.8em;
+        color: #fff;
+    }
+
+
+    .card{
+        width:86%;
+        margin: 1em auto;
+        text-align:center;
+    }
+
+    .title-name {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.2em;
+        letter-spacing: 1px;
+        line-height: 1.3em;
+        margin-top: 0.7em !important;
+    
+    }
+
+
+ 
+
+}
+
+
+
+
+
+
+/*---------------------------------------------------------------------------
+                   
+Desktop View - Screen MIN 768 px    
+
+----------------------------------------------------------------------------*/
+
+@media screen and (min-width: 768px) {
+
+    /*------------------------------------------
+    RESET
+    -------------------------------------------*/
+
+    .space-between {
+        width: 100%;
+        height: 14vh;
+        background-color: transparent;
+    }
+
+    /*------------------------------------------
+    LANDING
+    -------------------------------------------*/
+
+    #landing {
+        width: 100%;
+        height: 100vh;
+        background-image: url(../img/background-landing-desktop.jpg);
+        background-position: center;
+        background-attachment: fixed;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    /*---------------------------------------------------------------------------
+                   
+NAVIGATION BAR    
+    
+----------------------------------------------------------------------------*/
+
+    #mobile-navbar {
+        display: none;
+    }
+
+    #desktop-navbar {
+        width: 100%;
+        height: 10vh;
+        position: sticky;
+        top: 0;
+        bottom: 0;
+        z-index: 99;
+        box-shadow: 0px 5px 5px -5px grey;
+    }
+
+    .main-nav {
+        width: 74%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #desktop-navbar .main-nav li {
+        list-style-type: none;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #desktop-navbar .main-nav li a {
+        font-family: 'Allerta Stencil', sans-serif;
+        text-decoration: none;
+        color: #C0AB8E;
+        font-size: 1.2em;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .home-button {
+        color: #2E4A62 !important;
+    }
+
+    #desktop-navbar .main-nav li a:hover {
+        border-top: 5px solid #F0EDE5;
+        border-bottom: 5px solid #F0EDE5;
+        color: #2E4A62;
+    }
+
+    .title {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .container {
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+        top: 22vh;
+    }
+
+    .name {
+        text-align: center;
+        font-family: 'Allerta Stencil', sans-serif;
+        font-size: 10px;
+        margin-top: 50px;
+
+    }
+
+    .fullStack{
+        margin-top:1.2em;
+        font-size:18px;
+    }
+
+    img.logo {
+        margin-top:1.25em;
+        width: 200px;
+        height: auto;
+    }
+
+
+    /*---------------------------------------------------------------------------
+                    
+SECOND PAGE - ABOUT  
+    
+----------------------------------------------------------------------------*/
+
+    #about {
+        height: auto;
+        width: 100%;
+        padding-bottom: 5em;
+    }
+
+    .header {
+        font-size: 2.5em;
+        text-transform: uppercase;
+        font-family: 'Allerta Stencil', sans-serif;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 5vh;
+        color: #000080;
+        margin-top:-1em;
+    }
+
+    .information-box {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 2em;
+    }
+
+    .text {
+        width: 45%;
+    }
+
+    .text-right{
+        line-height:2em;
+        margin-right: 2.2em;
+    }
+    #profile-photo {
+        width: 300px;
+        height: auto;
+        box-shadow: 1px 1px 5px grey;
+        display: block;
+        margin: 0.5em auto;
+    }
+
+    .description {
+        list-style-type: none;
+        line-height: 1.5em;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        color: #000;
+        margin: 0.5em 0em;
+    }
+
+    .text p {
+        width: 100%;
+        font-size: 1em;
+        text-align: left;
+        line-height: 1.5em;
+        font-family: 'Montserrat', sans-serif;
+        margin: 1em auto;
+    }
+
+
+    /*---------------------------------------------------------------------------
+                    
+THIRD PAGE - HIGHLIGHTS  
+    
+----------------------------------------------------------------------------*/
+
+
+    #highlights {
+        width: 100%;
+        height: auto;
+        padding-bottom: 5em;
+    }
+
+    article.wrapper {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .wrapper {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .wrapper p {
+        font-size: 1em;
+        text-align: left;
+        line-height: 1.3em;
+        font-family: 'Montserrat', sans-serif;
+        margin: 1em auto 0 auto;
+    }
+
+    .skills {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+
+    .skills li {
+        text-align: center;
+        margin: 5vh 0vw;
+        list-style-type: none;
+        font-family: 'Allerta Stencil', sans-serif;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    .skills li img {
+        margin: 0 auto;
+        display: block;
+        width: 8em;
+    }
+
+    .icon-construction:hover {
+        content: url(../img/icon-learning.png);
+        margin: 0 auto;
+        display: block;
+        width: 8em;
+    }
+
+
+
+    /*---------------------------------------------------------------------------
+                    
+FOURTH PAGE - TESTIMONIALS  
+    
+----------------------------------------------------------------------------*/
+
+    #testimonials {
+        height: auto;
+        width: 100%;
+        padding-bottom: 5em;
+    }
+
+    .opinions {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .opinions article {
+        width: 100%;
+        display: block;
+        padding: 2vh;
+    }
+
+    .speech-bubble {
+        position: relative;
+        border-radius: .4em;
+        padding: 2em;
+        margin-bottom: 2em;
+    }
+
+    .speech-bubble:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border: 25px solid transparent;
+        border-top-color: #2E4A62;
+        border-bottom: 0;
+        margin-left: -20px;
+        margin-bottom: -20px;
+    }
+
+    .speech-bubble p {
+        font-family: 'Montserrat', sans-serif;
+        color: #fff;
+    }
+
+
+    .pic-client {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 auto;
+        border: 2px solid #C0AB8E;
+    }
+
+    .pic-client img {
+        width: 300px;
+        height: auto;
+        display: block;
+        position: relative;
+        right: 50px;
+    }
+
+    h4 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2em;
+        text-align: center;
+        margin: 0.2em;
+        color: #2E4A62;
+    }
+
+    h5 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1em;
+        text-align: center;
+        font-weight: 400;
+    }
+
+
+
+    /*---------------------------------------------------------------------------
+                    
+FIFTH PAGE - CONTACT  
+    
+----------------------------------------------------------------------------*/
+
+    #contact {
+        height: auto;
+        width: 100%;
+        background-image: url(../img/white-door.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin: 3em auto;
+    }
+
+    .text-form {
+        width: 50%;
+        padding-right: 2em;
+        color: #000080;
+    }
+
+    .contact-form {
+        width: 45%;
+    }
+
+    input {
+        font-family: 'Montserrat', sans-serif;
+        box-shadow: 1px 1px 5px grey;
+        opacity: 0.8;
+        border: 1px solid #fff;
+        padding: 0.5em;
+        text-transform: uppercase;
+        width: 100%;
+    }
+
+    ::placeholder {
+        color: #000;
+        text-align: left top;
+    }
+
+    textarea {
+        font-family: 'Montserrat', sans-serif;
+        height: 10em;
+        width: 100%;
+        box-shadow: 1px 1px 5px grey;
+        opacity: 0.8;
+        border: 1px solid #fff;
+        padding: 0.5em;
+        text-transform: uppercase;
+    }
+
+    .submit {
+        font-family: 'Montserrat', sans-serif;
+        width: 50%;
+        display: block;
+        margin: 0 auto 1.5em auto;
+    }
+
+
+    /*---------------------------------------------------------------------------
+                    
+FOOTER  
+    
+----------------------------------------------------------------------------*/
+
+    footer {
+        width: 100%;
+        height: auto;
+        background-color: #000;
+        box-shadow: 1px 1px 10px grey;
+        padding-bottom: 1em;
+    }
+
+    .social-icons {
+        text-align: center;
+    }
+
+    .social-icons img {
+        width: 12vh;
+        height: auto;
+        padding: 2vh;
+        margin: 1vh;
+        display: inline-block;
+    }
+
+    footer .copyright {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .icon {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    .icon:hover {
+        opacity: 1;
+    }
+
+    .impressum {
+        width: 100%;
+        height: auto;
+        margin: 1.2em 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h6 a {
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5em;
+        font-weight: 400;
+        margin: 0px 10px;
+        color: #F0EDE5;
+    }
+
+    h6 a:hover {
+        color: #fff;
+    }
+
+    .impressum span {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1em;
+        color: #F0EDE5;
+    }
+
+    .card-container {
+        display: flex;
+        justify-content: space-around; 
+    }
+    
+    .card-container2 {
+        display: flex;
+        justify-content: space-around; 
+        margin-top:2em;
+    }
+    
+
+}
+
+
+/*---------------------------------------------
+
+OTHERS
+
+----------------------------------------------*/
+
+.card {
+    height: 470px;
+    width: 350px;
+    display: block;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+    overflow: hidden;
+    margin-bottom:3em;
+}
+
+.card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.7); 
+}
+
+.footer-card {
+    height: 590px;
+    width: 350px;
+    background-color: rgba(0,0,0,.5);
+    display: block;
+    position: absolute;
+    top: 0;
+    padding: 15px 20px;
+    color: #fff;
+    text-align: center;
+    transform: translateY(360px);
+    transition: transform 0.2s;
+}
+
+.title-name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8em;
+    letter-spacing: 1px;
+    line-height: 1.3em;
+    margin-top:-1.6em;
+
+}
+
+.subtitle {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.7em;
+    font-weight: lighter;
+    letter-spacing: 4px;
+    line-height: 2em;
+    text-transform: uppercase;
+}
+
+.info {
+    height: 60%;
+    width: 95%;
+    display: block;
+    margin: 0 auto 40px;
+    padding: 0 10px;
+    transform: translateY(50px);
+    overflow-y: scroll;
+}
+
+.info-p {
+    font-family: sans-serif;
+    font-size: 0.9em;
+    text-align: justify;
+    line-height: 1.2em;
+    margin-bottom: 20px;
+}
+
+.info::-webkit-scrollbar {
+    width: 7px;
+    height: 10px;
+}
+
+.info::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+}
+
+.info::-webkit-scrollbar-thumb {
+    background: #e1e1e1;
+    border: 0 none #fff;
+    border-radius: 50px;
+}
+
+.info::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+}
+
+.info::-webkit-scrollbar-track {
+    background: #666;
+    border: 0 none #fff;
+    border-radius: 50px;
+}
+
+.info::-webkit-scrollbar-track:hover {
+    background: #666;
+}
+
+.info::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+.social-media {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.link-media {
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: transform 0.25s ease-in-out;
+}
+
+.link-media:hover {
+    transform: translateY(-5px);
+}
+
+.img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+}
+
+.label:before {
+    content: "MORE INFORMATION";
+    width: 350px;
+    position: absolute;
+    bottom: 15px;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    text-align: center;
+    line-height: 2em;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+.check {
+    display: none;
+}
+
+.check:checked ~ .label:before {
+    content: "Close";
+}
+
+.check:checked ~ .img {
+    transform: scale(1.2);
+    filter: blur(2px);
+}
+
+.check:checked ~ .footer-card {
+    transform: translateY(0);
+}
+
+.check:checked ~ .footer-card .info {
+    transform: translateY(30px);
+}
+
+.technology{
+    margin-top:2em;
+}
+
+.lineCard{
+  height: 4px;
+  border-color: black;
+}
+
+.textCard{
+    margin-top:1.2em;
+}
+
+.tech-icon{
+    margin-bottom:1.2em
+}
+
+
+
+
+
+.carousel-container {
+            overflow: hidden;
+            width: 100%;
+            position: relative;
+        }
+
+        .skills-carousel {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .skills {
+            min-width: 100%;
+            text-align: center;
+            padding: 20px; 
+        }
+
+        .icon {
+            width: 50px;
+        }
+
+        .carousel-dots {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: white;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        .dot.active {
+            background-color: #333;
+        }
+
+
+
+
+        .project-card {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            width:25em;
+            height: 25em;
+            display: inline-block;
+            vertical-align: top; 
+            margin: 10px;
+            border: 3px solid black;
+        }
+        
+        
+        .icons img {
+            width: 40px;
+            height: 40px;
+            margin: 5px;
+        }
+        
+        .imgProjects{
+         width:14em;
+          height:14em;
+        }
+
+        #projects {
+            text-align: center; 
+        }
+        
+       
