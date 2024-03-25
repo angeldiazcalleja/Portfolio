@@ -197,7 +197,7 @@
         <script>
            document.addEventListener('DOMContentLoaded', function () {
     const skillsCarousel = document.querySelector('.skills-carousel');
-    const skillsList = document.querySelectorAll('.skills'); // Cambiado a querySelectorAll
+    const skillsList = document.querySelectorAll('.skills'); 
     const dotsContainer = document.querySelector('.carousel-dots');
     const dots = Array.from(dotsContainer.children);
 
@@ -216,7 +216,7 @@
     }
 
     function nextSlide() {
-        currentIndex = (currentIndex + 1) % skillsList.length; // Cambiado a skillsList.length
+        currentIndex = (currentIndex + 1) % skillsList.length; 
         updateCarousel();
         setActiveDot(currentIndex);
     }
@@ -230,7 +230,7 @@
 
     function restartInterval() {
         clearInterval(intervalId);
-        intervalId = setInterval(nextSlide, 2000); // Cambiado a 1 segundo
+        intervalId = setInterval(nextSlide, 2000); 
     }
 
     dots.forEach((dot, index) => {
